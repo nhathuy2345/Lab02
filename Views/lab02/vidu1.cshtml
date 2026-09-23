@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Định dạng văn bản</title>
+    <style type="text/css">
+        body{
+            font-size:12px;
+        }
+        h1,#p1,.p2{
+            background-color: brown;
+            color: yellow;
+            font-size: 40px;
+            font-family: 'book atiqua';
+        }
+        p{
+            background-color:black;
+            color:white;
+            font-style:italic;
+        }
+        .p2{
+            border: 2px solid white;
+            text-transform:capitalize;
+        }
+        .dropcap{
+            float:left;
+            color:crimson;
+            font-size:3em;
+            line-height:70px;
+            padding-top:2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Highligh văn bản</h1>
+    <p> Đây là đoạn<span id="p1"> văn bản</span> sẽ được highlight</p>
+    <p <span class="dropcap">Đ</span>ây là đoạn <span class=".p2">văn bản thứ 2</span> được highlight</p>
+</body>
+</html>

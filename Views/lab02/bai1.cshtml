@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài tập 1: Trình bày các mẫu</title>
+    <style type="text/css">
+        body {
+            background-color: #f4f4f4;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            background-color:red;
+            text-align:center;
+            color:white;
+        }
+        #header {
+            background-color: #337ab7;
+            padding: 40px 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #content {
+            background-color: #5cb85c;
+            flex: 2;
+            padding: 30px;
+            min-height: 350px;
+        }
+        #sidebar {
+            background-color: #4cae4c;
+            flex: 1;
+            padding: 30px;
+            min-height: 350px;
+            border-left: 1px solid #4cae4c;
+        }
+
+        #footer {
+            background-color: #f0ad4e;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        .main-wrapper {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">MAIN MENU</div>
+    <div id="header">HEADER</div>
+    <div class="main-wrapper">
+        <div id="content">CONTENT</div>
+        <div id="sidebar">SIDEBAR</div>
+    </div>
+    <div id="footer">FOOTER</div>
+</body>
+</html>

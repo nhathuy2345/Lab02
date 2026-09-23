@@ -1,0 +1,405 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlighten Designs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fff;
+            color: #666;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        #container {
+            width: 955px;
+            margin: 80px auto 0 auto;
+        }
+
+       
+        #menu {
+            height: 72px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .menu-item {
+            display: block;
+            padding: 0 20px;
+            height: 48px;
+            line-height: 48px;
+            text-decoration: none;
+            color: #444;
+            font-size: 14px;
+        }
+
+        .menu-item.active {
+            background-color: #e8750b;
+            color: white;
+            height: 72px;
+            line-height: 72px;
+        }
+
+        .menu-item:hover {
+            background-color: #e8750b;
+            color: white;
+        }
+
+
+        #header {
+            height: 180px;
+            position: relative;
+            background-color: #ddd;
+
+            background-image: url('@Url.Content("~/Content/images/anh doi ban chan.jpg")');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border-top: 8px solid #eee;
+            border-bottom: 8px solid #eee;
+        }
+
+        
+        .logo {
+            position: absolute;
+            right: 0;
+            top: 63px;
+
+            width: 340px;
+            padding: 10px 20px;
+
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+
+            font-size: 25px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+       
+        .main-wrapper {
+            display: flex;
+            padding: 30px 30px 35px 30px;
+        }
+
+      
+        #content {
+            width: 65%;
+            padding-right: 45px;
+        }
+
+        #content h2 {
+            color: #df7515;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 26px;
+        }
+
+        #content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 22px;
+            color: #666;
+        }
+
+        #content strong {
+            color: #555;
+        }
+
+        .orange {
+            color: #df7515;
+        }
+
+        .contact-title {
+            margin-top: 35px;
+        }
+
+        .contact-info {
+            margin-bottom: 0 !important;
+            line-height: 1.7 !important;
+        }
+
+        .contact-info strong {
+            display: inline-block;
+            width: 90px;
+        }
+
+        .more-info {
+            display: inline-block;
+            margin-top: 18px;
+            color: #d87868;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .more-info:hover {
+            text-decoration: underline;
+        }
+
+        
+        #sidebar {
+            width: 35%;
+            padding-left: 30px;
+        }
+
+        #sidebar h2 {
+            color: #8ba73a;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 27px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-item h4 {
+            color: #444;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .project-item p {
+            font-size: 14px;
+            line-height: 1.55;
+            color: #666;
+        }
+
+        .project-item a {
+            color: #8ba73a;
+            text-decoration: none;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+       
+        #footer {
+            border-top: 1px solid #ddd;
+
+            min-height: 75px;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding: 15px 30px;
+
+            color: #ccc;
+            font-size: 12px;
+        }
+
+        #footer p {
+            margin-bottom: 6px;
+        }
+
+        #footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        #footer a:hover {
+            color: #888;
+        }
+
+        .footer-right {
+            padding-top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="menu">
+
+            <a href="#" class="menu-item active">
+                ABOUT
+            </a>
+
+            <a href="#" class="menu-item">
+                SERVICES
+            </a>
+
+            <a href="#" class="menu-item">
+                PORTFOLIO
+            </a>
+
+            <a href="#" class="menu-item">
+                CONTACT US
+            </a>
+
+        </div>
+
+
+        
+        <div id="header">
+
+            <div class="logo">
+                enlighten<span style="font-weight:normal;">designs</span>
+            </div>
+
+        </div>
+
+
+        <div class="main-wrapper">
+
+           
+            <div id="content">
+
+                <h2>ABOUT</h2>
+
+                <p>
+                    <strong>Enlighten Designs</strong> is an Internet solution
+                    provider that specialises in front and back end development.
+                    To view some of the web sites we have created view our
+                    <span class="orange">portfolio</span>.
+                </p>
+
+                <p>
+                    We are currently undergoing a 'face lift', so if you have
+                    any questions or would like more information about the
+                    services we provide please feel free to contact us.
+                </p>
+
+
+                <h2 class="contact-title">
+                    CONTACT US
+                </h2>
+
+                <p class="contact-info">
+                    <strong>Phone:</strong> (07) 853 6060
+                </p>
+
+                <p class="contact-info">
+                    <strong>Fax:</strong> (07) 853 6060
+                </p>
+
+                <p class="contact-info">
+                    <strong>Email:</strong>
+                    <span class="orange">
+                        info@enlighten.co.nz
+                    </span>
+                </p>
+
+                <p class="contact-info">
+                    <strong>P.O Box:</strong>
+                    14159, Hamilton, New Zealand
+                </p>
+
+                <a href="#" class="more-info">
+                    More contact information...
+                </a>
+
+            </div>
+
+
+            <div id="sidebar">
+
+                <h2>
+                    FEATURED PROJECTS
+                </h2>
+
+
+                <div class="project-item">
+
+                    <h4>
+                        The New Zealand National Party
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            New Zealand National Party
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                        Pita ala pesama borak na falanuisen.
+                    </p>
+
+                </div>
+
+
+                <div class="project-item">
+
+                    <h4>
+                        Greensets
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            Greensets
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                        Pita ala pesama borak na falanuisen.
+                    </p>
+
+                </div>
+
+
+                <div class="project-item">
+
+                    <h4>
+                        Nutrition Care
+                    </h4>
+
+                    <p>
+                        We recently launched the
+                        <a href="#">
+                            Nutrition Care
+                        </a>
+                        website - Lorem ipsum dolor sit amet.
+                        Pita ala pesama borak na falanuisen.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer">
+
+            <div>
+                <p>
+                    Copyright © Enlighten Designs
+                </p>
+
+                <p>
+                    Powered by Enlighten Hosting and Vadmin 3.0 CMS
+                </p>
+            </div>
+
+
+            <div class="footer-right">
+
+                <a href="#">About</a> -
+                <a href="#">Services</a> -
+                <a href="#">Portfolio</a> -
+                <a href="#">Contact Us</a> -
+                <a href="#">Terms of Trade</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

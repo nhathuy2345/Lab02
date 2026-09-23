@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Định dạng bảng</title>
+    <style type="text/css">
+        table{
+            border: 3px solid black;
+            border-collapse:collapse;
+            width:400px;
+            height:300px;
+        }
+        th{
+            background-color:dodgerblue;
+            color:white;
+            font:bold;
+            border:1px solid black;
+        }
+        td{
+            color:black;
+            text-align:center;
+            border: 1px solid black;
+
+        }
+        .tr_le{
+            background-color:mediumaquamarine;
+        }
+        .tr_chan{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr class="tr_le">
+            <td>column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+        <tr class="tr_chan">
+            <td>column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+        <tr class="tr_le">
+            <td>column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+        <tr class="tr_chan">
+            <td>column 1</td>
+            <td>column 2</td>
+            <td>column 3</td>
+        </tr>
+
+    </table>
+</body>
+</html>

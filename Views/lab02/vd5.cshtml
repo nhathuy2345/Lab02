@@ -1,0 +1,65 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dàn bố cục trang web-layout</title>
+    <style type="text/css">
+        body {
+            background-color: #f4f4f4;
+            color: #fff;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #container{
+            border: 2px solid black;
+            background-color:white;
+            width:90%;
+            margin:10px auto;
+        }
+        #banner{
+            background-color:lightgray;
+            height:100px
+        }
+        #navigator{
+            background-color:dimgray;
+            height:50px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        #sidebar{
+            float:left;
+            background-color: gray;
+            width: 200px;
+            min-height:400px;
+        }
+        #content
+        {
+            min-height:400px;
+            margin-left:200px;
+            background-color:cornsilk;
+            border-left:1px solid black;
+        }
+        #footer {
+            background-color: dimgray;
+            height: 50px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">BANNER</div>
+        <div  id="navigator">NAVIGATOR</div>
+        <div id="sidebar">SIDEBAR</div>
+        <div id="content">CONTENT</div>
+        <div id="footer">FOOTER</div>
+    
+    </div>
+</body>
+</html>
